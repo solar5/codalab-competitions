@@ -5,7 +5,7 @@ from datetime import timedelta
 from textwrap import dedent
 
 from configurations import importer
-from django.utils.text import slugify
+# from django.utils.text import slugify
 
 if not importer.installed:
     importer.install()
