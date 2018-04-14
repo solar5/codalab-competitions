@@ -2,23 +2,23 @@
 
 {% load static %}
 
-{% block head_title %}Competitions (My CodaLab){% endblock head_title %}
-{% block page_title %}Competitions (My CodaLab){% endblock page_title %}
+{% block head_title %}Competitions 比赛 (My CodaLab){% endblock head_title %}
+{% block page_title %}Competitions 比赛 (My CodaLab){% endblock page_title %}
 
 {% block content %}
 
     <ul class="nav nav-tabs" id="my_competition_tab_nav">
         <li class="active">
-            <a href="#competitions" role="tab" data-toggle="tab">Competitions</a>
+            <a href="#competitions" role="tab" data-toggle="tab">Competitions 比赛</a>
         </li>
         <li>
-            <a href="#my_participating" role="tab" data-toggle="tab">Competitions I'm In</a>
+            <a href="#my_participating" role="tab" data-toggle="tab">Competitions I'm In 我参与的比赛</a>
         </li>
         <li>
-            <a href="#my_managing" role="tab" data-toggle="tab">Competitions I'm Running</a>
+            <a href="#my_managing" role="tab" data-toggle="tab">Competitions I'm Running 我主办的比赛</a>
         </li>
         <li>
-            <a href="{% url 'my_datasets' %}">My Datasets</a>
+            <a href="{% url 'my_datasets' %}">My Datasets 我的数据集</a>
         </li>
     </ul>
 
