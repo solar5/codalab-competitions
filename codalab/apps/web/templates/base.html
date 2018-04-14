@@ -89,23 +89,23 @@
                           <li class="{% active request '/my/' %}">
                               {% if SINGLE_COMPETITION_VIEW_PK %}
                                   {% if request.user.is_superuser or request.user.is_staff %}
-                                      <a href="/my">My Competitions</a>
+                                      <a href="/my">我的比赛</a>
                                   {% endif %}
                               {% else %}
                                   {% if user.is_authenticated %}
-                                      <a href="/my">My Competitions</a>
+                                      <a href="/my">我的比赛</a>
                                   {% else %}
-                                      <a href="/competitions/">Search Competitions</a>
+                                      <a href="/competitions/">发现比赛</a>
                                   {% endif %}
                               {% endif %}
                           </li>
                           <li class="{% active request '/my/' %}">
                           {% if not user.is_authenticated %}
-                          <a href="{% url 'account_login' %}?next={{request.path}}" target="_self">My Competitions</a>
+                          <a href="{% url 'account_login' %}?next={{request.path}}" target="_self">我的比赛</a>
                           {% endif %}
                           </li>
                         <li>
-                            <a href="https://github.com/codalab/codalab-competitions/wiki" target="_blank">Help</a>
+                            <a href="https://github.com/codalab/codalab-competitions/wiki" target="_blank">帮助</a>
                         </li>
                         {% if user.is_authenticated %}
                             <li class="dropdown {% active request '/accounts/' %}">
@@ -171,8 +171,8 @@
                 {% if SINGLE_COMPETITION_VIEW_PK %}
                     <li><a href="http://codalab.org/" target="_blank">Powered by Codalab</a></li>
                 {% else %}
-                    <li><a href="https://github.com/codalab/codalab/wiki/Project_About_CodaLab" target="_blank">About</a></li>
-                    <li><a href="https://github.com/codalab/codalab/wiki/Privacy" target="_blank">Privacy and Terms</a></li>
+                    <li><a href="https://github.com/codalab/codalab/wiki/Project_About_CodaLab" target="_blank">关于</a></li>
+                    <li><a href="https://github.com/codalab/codalab/wiki/Privacy" target="_blank">隐私及条款</a></li>
                 {% endif %}
 
                 <li><a>v{{ CODALAB_VERSION }}</a></li>
