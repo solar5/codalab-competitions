@@ -10,17 +10,17 @@
             labels: [{% for day in graph.days %}"{{ day }}",{% endfor %}],
             datasets: [
                 {
-                    type: 'line',
-                    label: 'High Score',
-                    yAxisID: 'score',
+                    type: 'line 直线图',
+                    label: 'High Score 最高分',
+                    yAxisID: 'score 成绩',
                     data: [{% for high_score in graph.high_scores %}{{ high_score|floatformat }}, {% endfor %}],
                     borderColor: 'rgba(255, 99, 132, 1)',
                     backgroundColor: 'rgba(255, 255, 255, 0.0)'
                 },
                 {
-                    type: 'bar',
-                    label: 'Total Daily Submissions',
-                    yAxisID: 'count',
+                    type: 'bar 饼图',
+                    label: 'Total Daily Submissions 全天提交结果',
+                    yAxisID: 'count 计数',
                     data: [{% for count in graph.counts %}{{ count }}, {% endfor %}]
                 }
             ]
@@ -32,7 +32,7 @@
                     position: "left",
                     scaleLabel: {
                         display: true,
-                        labelString: 'Submission count'
+                        labelString: 'Submission count 提交数量统计'
                     },
                     ticks: {
                         beginAtZero: true,

@@ -22,9 +22,9 @@
 
         <div class="row">
           <div class="col-sm-6 competition-latest-list">
-            <h2 class="homepage_headers">Popular Competitions</h2>
+            <h2 class="homepage_headers">Popular Competitions 热门比赛 </h2>
             {% if not latest_competitions %}
-            <p><em>There are no competitions.</em></p>
+            <p><em>There are no competitions. 没有</em></p>
             {% else %}
                 {% for competition in latest_competitions %}
                     {% include "web/competition_latest.html" with competition=competition %}
@@ -32,9 +32,9 @@
             {% endif %}
           </div>
             <div class="col-sm-6 competition-latest-list">
-            <h2 class="homepage_headers">Featured Competitions</h2>
+            <h2 class="homepage_headers">Featured Competitions 特色比赛</h2>
             {% if not latest_competitions %}
-            <p><em>There are no competitions.</em></p>
+            <p><em>There are no competitions. 没有 </em></p>
             {% else %}
                 {% for competition in featured_competitions %}
                     {% include "web/competition_latest.html" with competition=competition %}

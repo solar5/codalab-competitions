@@ -118,24 +118,24 @@
                                         <li class="divider"></li>
                                         <li><a href="{% url 'customize_codalab' %}">Customize Codalab</a></li>
                                         <li class="divider"></li>
-                                        <li><a href="{% url 'su-login' %}">Switch User</a></li>
+                                        <li><a href="{% url 'su-login' %}">切换用户</a></li>
                                         <li class="divider"></li>
                                     {% endif %}
-                                    <li><a href="{% url 'user_settings' %}">Settings</a></li>
+                                    <li><a href="{% url 'user_settings' %}">设置</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="{% url 'queues:list' %}">Worker Queue Management</a></li>
+                                    <li><a href="{% url 'queues:list' %}">Worker队列管理</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="/accounts/password/reset/" target="_self">Change Password</a></li>
+                                    <li><a href="/accounts/password/reset/" target="_self">修改密码</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="{% url 'account_logout' %}" target="_self">Sign Out</a></li>
+                                    <li><a href="{% url 'account_logout' %}" target="_self">登出</a></li>
                                 </ul>
                             </li>
                         {% else %}
                             <li>
-                                <a href="{% url 'account_signup' %}?next={{request.path}}" target="_self">Sign Up</a>
+                                <a href="{% url 'account_signup' %}?next={{request.path}}" target="_self">注册</a>
                             </li>
                             <li>
-                                <a href="{% url 'account_login' %}?next={{request.path}}" target="_self">Sign In</a>
+                                <a href="{% url 'account_login' %}?next={{request.path}}" target="_self">登陆</a>
                             </li>
                         {% endif %}
                     </ul>
@@ -169,9 +169,10 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="https://github.com/codalab/codalab/issues" target="_blank">Join us on Github for contact & bug reports</a></li>
                 {% if SINGLE_COMPETITION_VIEW_PK %}
-                    <li><a href="http://codalab.org/" target="_blank">Powered by Codalab</a></li>
+                    <li><a href="http://codalab.org/" target="_blank">Powered by Codalab & Azure</a></li>
                 {% else %}
-                    <li><a href="https://github.com/codalab/codalab/wiki/Project_About_CodaLab" target="_blank">关于</a></li>
+                <li><a href="http://codalab.org/" target="_blank">Powered by Codalab & Azure</a></li>
+                <li><a href="https://github.com/codalab/codalab/wiki/Project_About_CodaLab" target="_blank">关于</a></li>
                     <li><a href="https://github.com/codalab/codalab/wiki/Privacy" target="_blank">隐私及条款</a></li>
                 {% endif %}
 

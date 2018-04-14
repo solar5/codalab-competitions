@@ -9,7 +9,7 @@
         <p>Really delete {{ competition }}?</p>
         <form class="wide" method="POST" action="{% url 'competitions:delete' pk=competition.id %}" >
             {% csrf_token %}
-            <input type="submit" class="submit small secondary button" value="Yes, delete the competition.">
+            <input type="submit" class="submit small secondary button" value="Yes, delete the competition. 确定">
         </form>
     </div>
 </div>
