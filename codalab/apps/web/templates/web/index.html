@@ -5,101 +5,101 @@
 
 {% block hero_subheader %}
     <div class="jumbotron">
-        <div class="container">
-            <div class="row-fluid-wrapper row-depth-1 row-number-2 ">
-                <div class="row-fluid ">
-                    <div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-                        <div class="cell-wrapper layout-widget-wrapper">
-                            <span id="hs_cos_wrapper_module_14585875078914239" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_custom_widget"
-                                style="" data-hs-cos-general-type="widget" data-hs-cos-type="custom_widget">
-                                <!-- Faded to remove CTA pop in issue above the fold -->
-                                <div class="page-hero" style="background-color: #a0a0a0; ">
-                                    <div class="overlay" style="">
-                                        <section class="video-hero" style="background-color: #4a4a4a;">
-                                            <!-- add autoplay to the video tag below to enable it -->
-                                            <video id="hero-video" preload="" loop muted autoplay width="100%" height="auto" poster="" style="opacity: .4; margin-bottom:-5px;">
-                                                <source src="//cdn2.hubspot.net/hubfs/532045/DATA_NO%20LOGO_FINAL.mp4?t=1523557645698" type="video/mp4">
-                                                <source src="" type="video/ogg">
-                                            </video>
-                                            <div class="fallback-image" style="display:none; background-image: url(  ); ">
+        <div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+            <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                    <div class="cell-wrapper layout-widget-wrapper">
+                        <span id="hs_cos_wrapper_module_14585875078914239" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_custom_widget"
+                            style="" data-hs-cos-general-type="widget" data-hs-cos-type="custom_widget">
+                            <!-- Faded to remove CTA pop in issue above the fold -->
+                            <div class="page-hero" style="background-color: #a0a0a0; ">
+                                <div class="overlay" style="">
+                                    <section class="video-hero" style="background-color: #4a4a4a;">
+                                        <!-- add autoplay to the video tag below to enable it -->
+                                        <video id="hero-video" preload="" loop muted autoplay width="100%" height="auto" poster="" style="opacity: .4; margin-bottom:-5px;">
+                                            <source src="//cdn2.hubspot.net/hubfs/532045/DATA_NO%20LOGO_FINAL.mp4?t=1523557645698" type="video/mp4">
+                                            <source src="" type="video/ogg">
+                                        </video>
+                                        <div class="fallback-image" style="display:none; background-image: url(  ); ">
+                                        </div>
+                                        <div class="center-text">
+                                            <div class="content" style="max-width:700px;">
+                                                <h1>A powerful platform for enterprise data science.</h1>
+                                                <h2>
+                                                    <span style="font-weight: 400;">DataScience.com's platform empowers your team with open source tools, elastic
+                                                        infrastructure, and customizable workflows.
+                                                    </span>
+                                                </h2>
+                                                <a href="#shadow-vid" class="stroke-button vid-button">
+                                                    <span class="fa fa-play" aria-hidden="true"></span>Watch Video</a>
+                                                <a class="button-blue" href="/request-demo">Request Demo</a>
                                             </div>
-                                            <div class="center-text">
-                                                <div class="content" style="max-width:700px;">
-                                                    <h1>A powerful platform for enterprise data science.</h1>
-                                                    <h2>
-                                                        <span style="font-weight: 400;">DataScience.com's platform empowers your team with open source tools, elastic
-                                                            infrastructure, and customizable workflows.
-                                                        </span>
-                                                    </h2>
-                                                    <a href="#shadow-vid" class="stroke-button vid-button">
-                                                        <span class="fa fa-play" aria-hidden="true"></span>Watch Video</a>
-                                                    <a class="button-blue" href="/request-demo">Request Demo</a>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
+                                        </div>
+                                    </section>
                                 </div>
-                                <script>
-                                    // Vertical Center Hero Content
-                                    $(window).load(function () {
-                                        $('.page-hero .content').flexVerticalCenter();
-                                    });
-                                </script>
-            
-                                <style>
-                                    .video-hero {
-                                        position: relative;
-                                        max-height: 700px;
-                                        overflow: hidden;
-                                    }
-            
+                            </div>
+                            <script>
+                                // Vertical Center Hero Content
+                                $(window).load(function () {
+                                    $('.page-hero .content').flexVerticalCenter();
+                                });
+                            </script>
+        
+                            <style>
+                                .video-hero {
+                                    position: relative;
+                                    max-height: 700px;
+                                    overflow: hidden;
+                                }
+        
+                                .video-hero .center-text {
+                                    position: absolute;
+                                    top: 35%;
+                                    width: 100%;
+                                    max-width: none;
+                                    margin-top: 0!important;
+                                }
+        
+                                .video-hero .content {
+                                    margin: 0 auto;
+                                    position: relative;
+                                    display: block!important;
+                                }
+        
+                                .video-hero h1 {
+                                    color: #fff;
+                                }
+        
+                                .video-hero h2 {
+                                    color: #fff;
+                                }
+        
+                                @media (max-width: 767px) {
                                     .video-hero .center-text {
-                                        position: absolute;
-                                        top: 35%;
-                                        width: 100%;
-                                        max-width: none;
-                                        margin-top: 0!important;
-                                    }
-            
-                                    .video-hero .content {
-                                        margin: 0 auto;
                                         position: relative;
-                                        display: block!important;
                                     }
-            
-                                    .video-hero h1 {
-                                        color: #fff;
+                                    #hero-video {
+                                        display: none!important;
                                     }
-            
-                                    .video-hero h2 {
-                                        color: #fff;
+                                    .video-hero {
+                                        background-image: url(https://www.datascience.com/hubfs/hero_image.png?t=1523557645698)!important;
                                     }
-            
-                                    @media (max-width: 767px) {
-                                        .video-hero .center-text {
-                                            position: relative;
-                                        }
-                                        #hero-video {
-                                            display: none!important;
-                                        }
-                                        .video-hero {
-                                            background-image: url(https://www.datascience.com/hubfs/hero_image.png?t=1523557645698)!important;
-                                        }
-                                        .home .video-hero .content {
-                                            margin-top: 55px!important;
-                                            margin-bottom: 40px;
-                                        }
+                                    .home .video-hero .content {
+                                        margin-top: 55px!important;
+                                        margin-bottom: 40px;
                                     }
-                                </style>
-                            </span>
-                        </div>
-                        <!--end layout-widget-wrapper -->
+                                }
+                            </style>
+                        </span>
                     </div>
-                    <!--end widget-span -->
+                    <!--end layout-widget-wrapper -->
                 </div>
-                <!--end row-->
+                <!--end widget-span -->
             </div>
-            <!--end row-wrapper -->
+            <!--end row-->
+        </div>
+        <!--end row-wrapper -->
+        <div class="container">            
             <div class="row">
                 <div class="col-sm-12 col-md-8 col-md-offset-2">
                     <img src="{{STATIC_URL}}img/codalab-logo-onecolor-reverse.png" alt="CodaLab" class="img-responsive">
